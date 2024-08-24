@@ -7,7 +7,7 @@ azul #007DD1
 laranja #FE860C
 **/
 
-/* green primary
+/* green primary orange secondary
 :root {
     --primary: #8AB71E;
     --secondary: #FE860C;
@@ -16,7 +16,7 @@ laranja #FE860C
 }
  */
 
-/* blue primary
+/* blue primary green secondary
 :root {
     --primary: #007DD1;
     --secondary: #8AB71E;
@@ -119,6 +119,13 @@ laranja #FE860C
     height: 80px
 }
 
+.navbar-brand img {
+    height: 75%; /* Set the image height to 100% of the navbar height */
+    max-height: 100%; /* Ensure the image does not exceed the navbar height */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 1rem;
+}
+
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
@@ -144,12 +151,17 @@ laranja #FE860C
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
-        margin-right: 0;
+        display: flex;
+        justify-content: center;
         padding: 10px 0;
     }
 
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
+    }
+
+    .px-4 {
+        padding-left: 1rem !important;
     }
 }
 
@@ -367,6 +379,22 @@ laranja #FE860C
     color: var(--primary);
     letter-spacing: 1px;
     box-shadow: none;
+}
+
+.footer .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer img {
+    height: 2.5rem;
+    width: auto;
+    background-color: transparent;
+    margin-right: 0.6rem;
+}
+
+.footer a {
+    color: #ffffff;
 }
 
 .copyright {
